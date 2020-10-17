@@ -8,19 +8,19 @@ namespace DogRescue.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index() //calls and renders the index view
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult AboutUs() //calls and renders the about us view
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Donations()//calls and renders the donation view
         {
             ViewBag.Message = "Your contact page.";
 
