@@ -23,6 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "AboutUs", "Home")</li>
+                    <li>@Html.ActionLink("Rescue Dogs", "Index","RescueDogs")</li>
                     <li>@Html.ActionLink("Donations", "Index", "Donations")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -33,7 +34,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - PNW Rescue Dogs</p> //rescue dog footer
         </footer>
     </div>
 
