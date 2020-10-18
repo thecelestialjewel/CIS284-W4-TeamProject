@@ -89,32 +89,6 @@ namespace DogRescue.Controllers
             return View(donation);
         }
 
-        // GET: Donations/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Donation donation = db.Donations.Find(id);
-            if (donation == null)
-            {
-                return HttpNotFound();
-            }
-            return View(donation);
-        }
-
-        // POST: Donations/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Donation donation = db.Donations.Find(id);
-            db.Donations.Remove(donation);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)

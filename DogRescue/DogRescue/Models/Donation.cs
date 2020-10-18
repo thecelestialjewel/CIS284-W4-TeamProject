@@ -17,12 +17,10 @@ namespace DogRescue.Models
 
     public class DonationsDbContext : DbContext //how donations communicates with database
     {
-        public DonationsDbContext():base("DogRescueConnection")//calling "DogRescueConnection" connection string from Web.Config
+        public DonationsDbContext():base("DogRescueDonationsConnection")//calling "DogRescueConnection" connection string from Web.Config
         {
 
         }
         public DbSet<Donation> Donations { get; set; }//C# representation of donations database
-
-        public System.Data.Entity.DbSet<DogRescue.Models.RescueDog> RescueDogs { get; set; }
     }
 }
