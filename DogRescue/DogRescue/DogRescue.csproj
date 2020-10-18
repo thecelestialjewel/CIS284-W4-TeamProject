@@ -192,12 +192,12 @@
     <Content Include="Content\Images\elias-castillo-7-ToFEHzMNw-unsplash.jpg" />
     <Content Include="Content\Images\gotdaflow-P8_RmeffU-w-unsplash.jpg" />
     <Content Include="Content\Images\heather-mount-1x19rBO57-o-unsplash.jpg" />
-    <Content Include="Content\Images\IMG_2509.jpg" />
+    <Content Include="Content\Images\Ranger.jpg" />
     <Content Include="Content\Images\IMG_2518.jpg" />
     <Content Include="Content\Images\lennon-cheng-HgjSfdjm9DI-unsplash.jpg" />
     <Content Include="Content\Images\matt-nelson-aI3EBLvcyu4-unsplash.jpg" />
     <Content Include="Content\Images\nikolay-tchaouchev-FbG7KdgPSjs-unsplash.jpg" />
-    <Content Include="Content\Images\papillondog.jpg" />
+    <Content Include="Content\Images\Winston.jpg" />
     <Content Include="Content\Images\ryan-ruddy-aqbAljRN7Gc-unsplash.jpg" />
     <Content Include="Content\Images\ugur-arpaci-BPyfiP7hU2A-unsplash.jpg" />
     <Content Include="Content\Images\vincent-van-zalinge-vRNcSWIElE4-unsplash.jpg" />
@@ -207,6 +207,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Images\Eli.jpg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

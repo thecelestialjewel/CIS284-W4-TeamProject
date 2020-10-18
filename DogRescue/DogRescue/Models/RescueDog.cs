@@ -49,9 +49,9 @@ namespace DogRescue.Models
             if (!context.RescueDogs.Any())//if nothing in database add these values, if something is in database do not add values
             {
                 List<RescueDog> dogs = new List<RescueDog>();
-                dogs.Add(new RescueDog { Name = "Eli", Age = 17, AdoptionFee = 500, Availability = DateTime.Now, Breed = "Mastiff", UpToDateVaccinations = true, Notes = "Needs help with potty training." });
+                dogs.Add(new RescueDog { Name = "Eli", Age = 17, AdoptionFee = 500, Availability = DateTime.Now, Breed = "Weimaraner", UpToDateVaccinations = true, Notes = "Needs help with potty training." });
                 dogs.Add(new RescueDog { Name = "Winston", Age = 9, AdoptionFee = 150, Availability = DateTime.Now.AddDays(-17), Breed = "Papillon", UpToDateVaccinations = true, Notes = "Nice with children." });
-                dogs.Add(new RescueDog { Name = "Ranger", Age = 2, AdoptionFee = 300, Availability = DateTime.Now.AddDays(3), Breed = "German Shepard", UpToDateVaccinations = false, Notes = "Needs a family with yard." });
+                dogs.Add(new RescueDog { Name = "Ranger", Age = 4, AdoptionFee = 300, Availability = DateTime.Now.AddDays(3), Breed = "German Shepard", UpToDateVaccinations = false, Notes = "Needs a family with yard." });
 
                 context.RescueDogs.AddRange(dogs);
 

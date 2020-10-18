@@ -9,6 +9,7 @@
 
 <table class="table">
     <tr>
+        <th>Profile Picture</th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -28,36 +29,39 @@
             @Html.DisplayNameFor(model => model.UpToDateVaccinations)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Notes)
+            @ViewBag.Title
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var dog in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
+           <img src="@Url.Content($"./../../Content/Images/{dog.Name}.jpg")" style="height: 100px; width:150px;"/>
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Breed)
+            @Html.DisplayFor(modelItem => dog.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Age)
+            @Html.DisplayFor(modelItem => dog.Breed)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Availability)
+            @Html.DisplayFor(modelItem => dog.Age)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AdoptionFee)
+            @Html.DisplayFor(modelItem => dog.Availability)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.UpToDateVaccinations)
+            @Html.DisplayFor(modelItem => dog.AdoptionFee)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Notes)
+            @Html.DisplayFor(modelItem => dog.UpToDateVaccinations)
         </td>
         <td>
-            @Html.ActionLink("Details", "Details", new { id=item.Id })
+            @Html.DisplayFor(modelItem => dog.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=dog.Id })
         </td>
     </tr>
 }
