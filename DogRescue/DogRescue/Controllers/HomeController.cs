@@ -20,11 +20,5 @@ namespace DogRescue.Controllers
             return View();
         }
 
-        public ActionResult Donations()//calls and renders the donation view
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
