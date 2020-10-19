@@ -1,20 +1,16 @@
-﻿@{
-    ViewBag.Title = "About Us";
+﻿@model DogRescue.Models.AboutUsModel
+@{
+    ViewBag.Title = Model.Title;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@Model.Title.</h2>
 <!--pulled from the shelterpetproject.org
     Kelcee Chorba and Christine Jordan-->
+
 <h1>Our Story.</h1>
 
 <h2>Who we are</h2>
 
+
 <h3>
-    The Shelter Pet Project is the result of a collaborative effort between two leading animal
-    welfare groups, the Humane Society of the United States and Maddie’s Fund, and the leading 
-    producer of public service advertising (PSA) campaigns, The Ad Council.
-    Our goal is to make shelters the first place potential adopters turn when looking to get a 
-    new pet, ensuring that all healthy and treatable pets find loving homes. We do this by 
-    breaking down misconceptions surrounding shelter pets and celebrating the unique bond between
-    every shelter pet and parent.
+    @Model.Message   
 </h3>

@@ -1,17 +1,24 @@
-﻿@{
-    ViewBag.Title = "Home Page"; //This is the new home page
+﻿@model DogRescue.Models.HomeModel
+@{
+    ViewBag.Title = Model.Title; //This is the new home page
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@Model.Title<span class="badge badge-primary">"Am I good enough to come home with you"</span></h2>
+<h3>@Model.Message</h3>
+<!--<img src=" @Url.Content("../../Content/Images/Ranger.jpg")" style="height: 325px; width: 325px;"/>-->
+<div class="card" style="width: 12rem;">
+    <img src="@Url.Content("../../Content/Images/Ranger.jpg")"style="height: 325px; width: 325px;" class="card-img-top" alt="...">
+    <div class="card-body">
+        <address>
+            @Model.Address1<br />
+            @Model.Address2<br />
+            <abbr title="Phone">P:</abbr>
+            @Model.Phone
+        </address>
+    </div>
+</div>
+
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Support:</strong>   <a href="mailto:@Model.email1">@Model.email1</a><br />
+    <strong>Contact Owner:</strong> <a href="mailto:@Model.email2">@Model.email2</a>
 </address>
